@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="email.js"></script>
+<body class="body">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Portofolio</h1>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h2 class="hero-title">Hi, I'm <span class="accent">Muhammad Muflih Yassar</span></h2>
+      <p class="hero-subtitle">A  Android Developer with passion for crafting clean and functional UI</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-box">
+      <h3 class="section-title">About Me</h3>
+      <p class="section-text">I am a Fresh Graduate of Informatics Engineering who is enthusiastic and oriented towards Android application development. Have experience in designing and developing Android applications through individual and team projects, with a focus on the use of Flutter and Kotlin. Familiar with using Android Studio, Visual Studio Code, and Firebase as a database management medium. Have the ability to think logically, problem solving and are committed to contributing to innovative technology solutions.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+<div class="max-w-6xl mx-auto px-4">
+    <h3 class="section-title text-center mb-12">Projects</h3>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h4 class="project-title">RBC Member</h4>
+          <p class="project-desc">An Android app for membership registration and membership management.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muflihys/RBC_KTA_Project.git">GitHub</a>
+            <a href="assets/rbc.apk">Download APK</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h4 class="project-title">Foodstab App</h4>
+          <p class="project-desc">An Android app for buying and selling food and communicating between fellow food producers.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muflihys/foodstab_app.git">GitHub</a>
+            <a href="https://drive.google.com/drive/folders/1UyDDrvSzeTDhY07j3WzuSdYvw-riWXAf?usp=drive_link">Download APK</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h4 class="project-title">Ecosense</h4>
+          <p class="project-desc">An Android app to classify waste and provide recommendations on how to utilize it .</p>
+          <div class="project-links">
+            <a href="https://github.com/yudhistirank/EcoSense-C242-PS114.git">GitHub</a>
+            <a href="assets/ecosense.apk" download>Download APK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-box">
+      <h3 class="section-title">Get In Touch</h3>
+      <p class="section-text">Feel free to contact me for collaboration or just to say hi!</p>
+      <form id="contact-form" class="form">
+        <input type="text" name="user_name" placeholder="Your Name" class="form-input" required />
+        <input type="email" name="user_email" placeholder="Your Email" class="form-input" required />
+        <textarea name="message" rows="4" placeholder="Your Message" class="form-input" required></textarea>
+        <button type="submit" class="form-button">Send</button>
+      </form>
+      <p id="form-message" class="text-green-400 mt-4 hidden">Message sent successfully!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Your Name. Built with 💙 using Tailwind CSS.
+  </footer>
+
+</body>
+</html>
